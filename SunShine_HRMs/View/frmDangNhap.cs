@@ -55,7 +55,7 @@ namespace SunShine_HRMs
                 TAIKHOAN tk = dbcontext.TAIKHOANs.FirstOrDefault(p => p.MatDangNhap == txtUsername.Text && p.MatKhau == txtPassword.Text);
                 if (tk != null)
                 {
-                    HR_ui_Main frm = new HR_ui_Main();
+                    frmTrangChu frm = new frmTrangChu();
                     this.Hide();
                     frm.Show();
                 }
@@ -74,6 +74,7 @@ namespace SunShine_HRMs
             }
             else
                 txtPassword.UseSystemPasswordChar = true;
+
         }
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
