@@ -74,7 +74,6 @@ namespace SunShine_HRMs
             }
             else
                 txtPassword.UseSystemPasswordChar = true;
-
         }
         private void lblQuenMatKhau_Click(object sender, EventArgs e)
         {
